@@ -1,0 +1,56 @@
+plugins:
+  minecraft_server_enabled:
+    default: true
+    client: true
+  minecraft_server_auto_approve:
+    default: false
+    client: false
+  minecraft_server_allow_user_submissions:
+    default: true
+    client: true
+  minecraft_server_min_trust_level:
+    default: 1
+    min: 0
+    max: 4
+    client: true
+  minecraft_server_max_servers_per_user:
+    default: 3
+    min: 1
+    max: 20
+    client: true
+  minecraft_server_require_approval:
+    default: true
+    client: false
+  minecraft_server_probe_interval_minutes:
+    default: 5
+    min: 1
+    max: 60
+    client: false
+  minecraft_server_probe_timeout_seconds:
+    default: 5
+    min: 2
+    max: 15
+    client: false
+  minecraft_server_offline_after_minutes:
+    default: 30
+    min: 5
+    max: 1440
+    client: false
+  minecraft_server_show_ip:
+    default: false
+    client: true
+  minecraft_server_refresh_seconds:
+    default: 30
+    min: 10
+    max: 600
+    client: true
+  minecraft_server_submission_cooldown_seconds:
+    default: 300
+    min: 30
+    max: 3600
+    client: false
+  minecraft_server_description_max_length:
+    default: 280
+    min: 40
+    max: 1000
+    client: true

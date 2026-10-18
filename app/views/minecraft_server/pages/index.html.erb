@@ -1,0 +1,31 @@
+<% content_for :title do %><%= @page_title %> - <%= SiteSetting.title %><% end %>
+
+<div class="minecraft-servers-noscript" data-minecraft-server-version="<%= ::MinecraftServerDirectory::VERSION %>">
+  <h1><%= I18n.t("minecraft_server.page.heading") %></h1>
+  <p><%= I18n.t("minecraft_server.page.description") %></p>
+
+  <% if @servers.blank? %>
+    <p><%= I18n.t("minecraft_server.page.empty") %></p>
+  <% else %>
+    <table>
+      <thead>
+        <tr>
+          <th><%= I18n.t("minecraft_server.table.server") %></th>
+          <th><%= I18n.t("minecraft_server.table.players") %></th>
+          <th><%= I18n.t("minecraft_server.table.version") %></th>
+          <th><%= I18n.t("minecraft_server.table.status") %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @servers.each do |server| %>
+          <tr>
+            <td><%= server.name %></td>
+            <td><%= server.players_online %> / <%= server.players_max %></td>
+            <td><%= server.version_name.presence || "-" %></td>
+            <td><%= server.online ? I18n.t("minecraft_server.status.online") : I18n.t("minecraft_server.status.offline") %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

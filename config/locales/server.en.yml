@@ -1,0 +1,39 @@
+en:
+  site_settings:
+    minecraft_server_enabled: "Enable the Minecraft server directory."
+    minecraft_server_auto_approve: "Automatically approve submissions (only when approval is disabled)."
+    minecraft_server_allow_user_submissions: "Allow users to submit servers."
+    minecraft_server_min_trust_level: "Minimum trust level required to submit a server."
+    minecraft_server_max_servers_per_user: "Maximum servers a user may register."
+    minecraft_server_require_approval: "Require staff approval after a user submits or edits a server."
+    minecraft_server_probe_interval_minutes: "How often approved servers are probed, in minutes."
+    minecraft_server_probe_timeout_seconds: "Server status probe timeout, in seconds."
+    minecraft_server_offline_after_minutes: "Mark a server offline after this many minutes without a successful probe."
+    minecraft_server_show_ip: "Show server addresses in the public list."
+    minecraft_server_refresh_seconds: "Server list refresh interval, in seconds."
+    minecraft_server_submission_cooldown_seconds: "Cooldown between submissions by the same user, in seconds."
+    minecraft_server_description_max_length: "Maximum server description length."
+  minecraft_server:
+    page:
+      title: "Minecraft Servers"
+      heading: "Minecraft server directory"
+      description: "Discover Minecraft servers shared by the community. Status is checked by the forum on a schedule."
+      empty: "No approved servers yet."
+      empty_hint: "Sign in to submit your server. It will appear here after review."
+    status:
+      online: "Online"
+      offline: "Offline"
+      unknown: "Not checked"
+      pending: "Pending review"
+      approved: "Approved"
+      rejected: "Rejected"
+      hidden: "Hidden"
+    errors:
+      disabled: "The Minecraft server directory is disabled."
+      generic: "Something went wrong. Please try again."
+      login_required: "Please sign in first."
+      not_found: "Server not found."
+      forbidden: "You do not have permission to do that."
+    admin:
+      title: "Minecraft Servers"
+      description: "Review, hide, or delete submitted servers and inspect their probe status."

@@ -1,0 +1,47 @@
+.minecraft-servers-admin {
+  &__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 0.65em 0.75em;
+      border-bottom: 1px solid var(--content-border-color);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--primary-medium);
+      font-weight: 500;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em;
+  }
+
+  &__mono {
+    font-family: var(--d-font-family--monospace);
+    font-size: var(--font-down-1);
+    overflow-wrap: anywhere;
+  }
+
+  &__empty {
+    padding: 1.2em;
+    border: 1px solid var(--content-border-color);
+    border-radius: 8px;
+    background: var(--primary-very-low);
+    color: var(--primary-medium);
+    text-align: center;
+  }
+}

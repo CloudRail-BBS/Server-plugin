@@ -1,0 +1,39 @@
+zh_CN:
+  site_settings:
+    minecraft_server_enabled: "启用我的世界服务器目录。"
+    minecraft_server_auto_approve: "自动通过服务器提交（仍需关闭审核要求）。"
+    minecraft_server_allow_user_submissions: "允许用户提交服务器。"
+    minecraft_server_min_trust_level: "提交服务器所需的最低信任等级。"
+    minecraft_server_max_servers_per_user: "每位用户最多可登记的服务器数量。"
+    minecraft_server_require_approval: "用户提交或修改服务器后需要管理员审核。"
+    minecraft_server_probe_interval_minutes: "已通过服务器状态探测的间隔（分钟）。"
+    minecraft_server_probe_timeout_seconds: "服务器状态探测超时（秒）。"
+    minecraft_server_offline_after_minutes: "多久未成功探测后标记为离线（分钟）。"
+    minecraft_server_show_ip: "在公开列表中显示服务器地址。"
+    minecraft_server_refresh_seconds: "服务器列表自动刷新间隔（秒）。"
+    minecraft_server_submission_cooldown_seconds: "同一用户两次提交之间的冷却时间（秒）。"
+    minecraft_server_description_max_length: "服务器简介的最大长度。"
+  minecraft_server:
+    page:
+      title: "我的世界服务器"
+      heading: "我的世界服务器目录"
+      description: "发现社区成员分享的我的世界服务器。状态由论坛定时探测。"
+      empty: "还没有已通过审核的服务器。"
+      empty_hint: "登录后可以提交你的服务器，审核通过后会显示在这里。"
+    status:
+      online: "在线"
+      offline: "离线"
+      unknown: "尚未探测"
+      pending: "待审核"
+      approved: "已通过"
+      rejected: "已拒绝"
+      hidden: "已隐藏"
+    errors:
+      disabled: "我的世界服务器目录当前未启用。"
+      generic: "操作失败，请稍后重试。"
+      login_required: "请先登录。"
+      not_found: "服务器不存在。"
+      forbidden: "你没有权限执行此操作。"
+    admin:
+      title: "我的世界服务器"
+      description: "审核、隐藏或删除用户提交的服务器，并查看探测状态。"
