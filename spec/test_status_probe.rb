@@ -6,7 +6,7 @@ require_relative "../lib/minecraft_server/status_probe"
 
 class StatusProbeTest < Minitest::Test
   def setup
-    @probe = MinecraftServerDirectory::StatusProbe.new("example.com", 25_565, 2)
+    @probe = MinecraftServer::StatusProbe.new("example.com", 25_565, 2)
   end
 
   def test_varint_encoding_matches_protocol_examples
@@ -43,7 +43,7 @@ class StatusProbeTest < Minitest::Test
   end
 
   def test_parse_status_rejects_non_json
-    assert_raises(MinecraftServerDirectory::StatusProbe::ProtocolError) do
+    assert_raises(MinecraftServer::StatusProbe::ProtocolError) do
       @probe.send(:parse_status, "not-json", Process.clock_gettime(Process::CLOCK_MONOTONIC))
     end
   end

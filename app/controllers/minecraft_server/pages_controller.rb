@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   class PagesController < ::ApplicationController
     requires_plugin PLUGIN_NAME
     skip_before_action :check_xhr, only: :index

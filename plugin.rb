@@ -12,7 +12,7 @@
 # The Git repository is Server-plugin, but Discourse derives stylesheet URLs from
 # the directory, and core only accepts lowercase letters, digits, underscores and
 # hyphens there.
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   PLUGIN_NAME = "minecraft-server-directory"
 end
 
@@ -28,7 +28,7 @@ register_asset "stylesheets/minecraft-servers-admin.scss", :admin
 
 add_admin_route(
   "minecraft_server.admin.title",
-  ::MinecraftServerDirectory::PLUGIN_NAME,
+  ::MinecraftServer::PLUGIN_NAME,
   use_new_show_route: true,
 )
 
@@ -36,6 +36,6 @@ after_initialize do
   # Plugin tables are not part of core's schema dumper. This keeps a development
   # database usable after `db:schema:load`, while production still runs migrations.
   if !Rails.env.production? && ActiveRecord::Base.connection.table_exists?(:minecraft_servers)
-    MinecraftServerDirectory::Server.reset_column_information
+    MinecraftServer::Server.reset_column_information
   end
 end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   # Domain operations used by controllers and jobs. Keeping them here makes the
   # controller small and lets the same code be exercised from the console.
   module ServerRegistry

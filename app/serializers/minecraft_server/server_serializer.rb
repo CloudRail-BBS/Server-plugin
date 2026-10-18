@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   class ServerSerializer < ::ApplicationSerializer
     attributes :id,
                :name,

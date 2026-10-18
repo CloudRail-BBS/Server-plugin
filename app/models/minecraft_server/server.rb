@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   class Server < ::ActiveRecord::Base
     self.table_name = "minecraft_servers"
 

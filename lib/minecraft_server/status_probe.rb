@@ -4,7 +4,7 @@ require "json"
 require "socket"
 require "timeout"
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   # Minimal Minecraft Java Edition Server List Ping (SLP) implementation.
   #
   # The protocol is length-prefixed: [VarInt length][packet id][fields]. We only

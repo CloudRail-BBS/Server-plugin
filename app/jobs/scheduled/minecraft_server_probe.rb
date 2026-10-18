@@ -8,11 +8,11 @@ module ::Jobs
       return 0 unless SiteSetting.minecraft_server_enabled
 
       interval = SiteSetting.minecraft_server_probe_interval_minutes.to_i.minutes
-      servers = MinecraftServerDirectory::Server.due_for_probe(Time.zone.now - interval).limit(50).to_a
+      servers = MinecraftServer::Server.due_for_probe(Time.zone.now - interval).limit(50).to_a
 
       servers.count do |server|
         begin
-          MinecraftServerDirectory::ServerRegistry.probe_one(server)
+          MinecraftServer::ServerRegistry.probe_one(server)
           true
         rescue StandardError => e
           Rails.logger.warn("minecraft-server probe failed for #{server.id}: #{e.message}")

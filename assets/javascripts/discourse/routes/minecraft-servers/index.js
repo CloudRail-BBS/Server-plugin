@@ -1,5 +1,6 @@
 import DiscourseRoute from "discourse/routes/discourse";
 import { ajax } from "discourse/lib/ajax";
+import { action } from "@ember/object";
 
 const SERVERS_URL = "/minecraft-servers/servers.json";
 const MINE_URL = "/minecraft-servers/mine.json";

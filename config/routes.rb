@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-MinecraftServerDirectory::Engine.routes.draw do
+MinecraftServer::Engine.routes.draw do
   get "/" => "pages#index"
   get "/servers.json" => "servers#index"
   get "/mine.json" => "servers#mine"
@@ -15,5 +15,5 @@ MinecraftServerDirectory::Engine.routes.draw do
 end
 
 Discourse::Application.routes.draw do
-  mount ::MinecraftServerDirectory::Engine, at: "/minecraft-servers"
+  mount ::MinecraftServer::Engine, at: "/minecraft-servers"
 end

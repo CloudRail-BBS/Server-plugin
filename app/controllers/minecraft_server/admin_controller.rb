@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   class AdminController < ::ApplicationController
     requires_plugin PLUGIN_NAME
     before_action :ensure_admin

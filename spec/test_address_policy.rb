@@ -4,7 +4,7 @@ require "minitest/autorun"
 require_relative "../lib/minecraft_server/address_policy"
 
 class AddressPolicyTest < Minitest::Test
-  P = MinecraftServerDirectory::AddressPolicy
+  P = MinecraftServer::AddressPolicy
 
   def test_hostname_defaults_to_minecraft_port
     parsed = P.parse("play.example.com")

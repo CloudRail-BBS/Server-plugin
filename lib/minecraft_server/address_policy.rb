@@ -3,7 +3,7 @@
 require "ipaddr"
 require "resolv"
 
-module ::MinecraftServerDirectory
+module ::MinecraftServer
   # Validates the host/port a user wants probed. This is deliberately separate
   # from the socket code: the address rules are the security boundary, so they
   # need to be testable without making a network request.

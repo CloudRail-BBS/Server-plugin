@@ -1,6 +1,6 @@
 <% content_for :title do %><%= @page_title %> - <%= SiteSetting.title %><% end %>
 
-<div class="minecraft-servers-noscript" data-minecraft-server-version="<%= ::MinecraftServerDirectory::VERSION %>">
+<div class="minecraft-servers-noscript" data-minecraft-server-version="<%= ::MinecraftServer::VERSION %>">
   <h1><%= I18n.t("minecraft_server.page.heading") %></h1>
   <p><%= I18n.t("minecraft_server.page.description") %></p>
 
